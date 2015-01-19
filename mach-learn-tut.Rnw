@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\title{R Tutorial for Machine Learning with Andrew Ng}
+\author{Charles Carter\thanks{CharlesCarter@synovus.com}}
+\date{January 18, 2015}
+
+\begin{document}
+
+\maketitle{}
+
+\section*{Introduction}    
+
+\section{Basic Operations}
+
+\subsection{Basic algebra}
+
+<<basicoperations, cache=TRUE>>=
+5 + 6
+3 - 2
+5 * 8
+1 / 2
+2 ^ 6
+@
+
+\subsection{Logical operations}
+
+<<logicaloperations, cache=TRUE>>=
+1 == 2
+1 != 2
+1 && 0
+1 || 0
+xor(1, 0)
+options(prompt = ">> ", continue = "+ ")
+@
+
+\subsection{Variables}
+
+<<variables, cache=TRUE>>=
+a <- 3
+a
+b <- "h1"
+b
+c <- 3 >= 1
+c
+a <- pi
+a
+print(a)
+sprintf("6 decimals: %.6f", a)
+print(sprintf("6 decimals: %.6f", a))
+@
+\end{document}
